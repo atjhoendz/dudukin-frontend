@@ -1,4 +1,4 @@
-# dudukin
+# Dudukin - Frontend VueJS
 
 ## Project setup
 ```
