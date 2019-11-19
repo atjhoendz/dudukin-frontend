@@ -1,6 +1,7 @@
 <template>
     <v-footer
         dark
+        padless
         color="grey darken-3">
         <v-col
             class="text-center"
