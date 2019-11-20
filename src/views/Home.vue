@@ -6,7 +6,7 @@
           <h1 class="dudukin-logo display-4 my-12">Duduk.in</h1>
           <p class="display-2 font-weight-light deep-orange--text text-center">Why you should use this site</p>
           <v-btn x-large color="deep-orange my-12" @click="overlayLogin = !overlayLogin">
-            <v-icon left>mdi-silverware-fork-knife</v-icon>Restaurants Near You
+            <v-icon left>mdi-silverware-fork-knife</v-icon>Book Now
           </v-btn>
         </v-flex>
       </v-layout>
@@ -30,7 +30,7 @@
           </v-form>
         </v-card-text>
         <v-card-actions>
-          <v-btn block depressed>Login</v-btn>
+          <v-btn block depressed href="/dashboard">Login</v-btn>
         </v-card-actions>
         <h4 class="text-center pt-2 pb-0 mb-1">Create an account</h4>
         <v-card-actions>

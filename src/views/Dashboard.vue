@@ -1,7 +1,7 @@
 <template>
     <v-container class="my-5">
         <v-text-field label="Where would you like to eat?" prepend-inner-icon="mdi-magnify" solo outlined flat dense></v-text-field>
-        <p class="font-weight-bold">Nearby Restaurants</p>
+        <p class="font-weight-bold">Recommended Restaurants</p>
         <v-divider></v-divider>
         <v-container>
             <v-row>
