@@ -3,19 +3,27 @@
         <v-text-field label="Where would you like to eat?" prepend-inner-icon="mdi-magnify" solo outlined flat dense></v-text-field>
         <p class="font-weight-bold">Recommended Restaurants</p>
         <v-divider></v-divider>
-        <v-slide-group show-arrows class="my-2">
-            <v-slide-item v-for="card in cards" :key="card.title" class="my-2">
-                <v-card class="mx-2" width="175px">
-                    <v-img :src="card.src" height="100px"></v-img>
-                    <v-card-text class="text--primary">
-                        <div>{{ card.title }}</div>
-                    </v-card-text>
-                </v-card>
-            </v-slide-item>
-        </v-slide-group>
+        <div class="scrolling-wrapper-flexbox">
+            <v-card v-for="card in cards" :key="card.title" width="175px" class="mx-2">
+                <v-img :src="card.src" height="100px"></v-img>
+                <v-card-text class="text--primary">
+                    <div>{{ card.title }}</div>
+                </v-card-text>
+            </v-card>
+        </div>
         <p class="font-weight-bold">Choose the perfect environment</p>
         <v-divider></v-divider>
-        <v-slide-group show-arrows class="my-2">
+
+        <div class="scrolling-wrapper-flexbox">
+            <v-card v-for="card in cards2" :key="card.title" width="175px" class="mx-2">
+                <v-img :src="card.src" height="100px"></v-img>
+                <v-card-text class="text--primary">
+                    <div>{{ card.title }}</div>
+                </v-card-text>
+            </v-card>
+        </div>
+
+        <!-- <v-slide-group show-arrows class="my-2">
             <v-slide-item v-for="card in cards2" :key="card.title" class="my-2">
                 <v-card class="mx-2" width="175px">
                     <v-img :src="card.src" height="100px"></v-img>
@@ -24,7 +32,7 @@
                     </v-card-text>
                 </v-card>
             </v-slide-item>
-        </v-slide-group>
+        </v-slide-group> -->
     </v-container>
 </template>
 
