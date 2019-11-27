@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Dashboard from '../views/Dashboard.vue'
+import Katalog from '../views/Katalog.vue'
 
 Vue.use(VueRouter)
 
@@ -12,9 +12,19 @@ const routes = [
     component: Home
   },
   {
-    path: '/dashboard',
-    name: 'dashboard',
-    component: Dashboard
+    path: '/katalog',
+    name: 'katalog',
+    component: Katalog
+  },
+  {
+    path: '/katalog/get',
+    name: 'getKatalog',
+    component: Katalog
+  },
+  {
+    path: '/user/login',
+    name: 'login',
+    component: Home
   },
   {
     path: '/about',

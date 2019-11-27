@@ -29,21 +29,41 @@
                 </v-col>
             </v-row>
         </v-container>
+        <v-container>
+          <v-row>
+              <v-col v-for="post in posts" :key="post.title" :cols="post.flex" class="mx-0">
+                  <!-- <v-card>
+                      <v-img :src="card.src" height="100px" class="mx-0"></v-img>
+                      <v-card-text class="text--primary">
+                          <div>{{ card.title }}</div>
+                      </v-card-text>
+                  </v-card> -->
+                  <p>{{post.title}}</p>
+                  <p>{{post.description}}</p>
+              </v-col>
+          </v-row>
+        </v-container>
 
     </v-container>
 </template>
 
 <script>
+import PostService from '@/services/PostService'
 export default {
-  data: () => ({
-    cards: [
-      { title: 'Restaurant names', src: 'https://picsum.photos/id/1060/300', flex: 6 },
-      { title: 'Restaurant names', src: 'https://picsum.photos/id/1060/300', flex: 6 }
-    ],
-    cards2: [
-      { title: 'Family Friendly', src: 'https://picsum.photos/id/1060/300', flex: 6 },
-      { title: 'Romantic Dinner', src: 'https://picsum.photos/id/1060/300', flex: 6 }
-    ]
-  })
+  data () {
+    return {
+      posts: []
+    }
+  },
+  mounted () {
+    this.getPosts()
+  },
+  methods: {
+    async getPosts () {
+      const response = await PostService.fetchPosts()
+      this.posts = response.data.posts
+      // console.log(this.posts)
+    }
+  }
 }
 </script>

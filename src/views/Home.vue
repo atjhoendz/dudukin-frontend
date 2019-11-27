@@ -30,7 +30,8 @@
           </v-form>
         </v-card-text>
         <v-card-actions>
-          <v-btn block depressed href="/dashboard">Login</v-btn>
+          <!-- <v-btn block depressed href="/dashboard" @click="btnLogin">Login</v-btn> -->
+          <v-btn block depressed @click="btnLogin">Login</v-btn>
         </v-card-actions>
         <h4 class="text-center pt-2 pb-0 mb-1">Create an account</h4>
         <v-card-actions>
@@ -74,13 +75,25 @@
 
 <script>
 // @ is an alias to /src
+import UserService from '@/services/UserService'
 export default {
   name: 'home',
   data: () => ({
     absolute: false,
     opacity: 0.46,
     overlayLogin: false,
-    overlayRegister: false
-  })
+    overlayRegister: false,
+    email: '',
+    password: ''
+  }),
+  methods: {
+    async btnLogin () {
+      await UserService.login({
+        email: this.email,
+        password: this.password
+      })
+      this.$router.push({ name: 'katalog' })
+    }
+  }
 }
 </script>
