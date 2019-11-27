@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import PostService from '@/services/PostService'
+
 export default {
   data: () => ({
     cards: [
