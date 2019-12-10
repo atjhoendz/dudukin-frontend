@@ -11,7 +11,7 @@
                 <p class="title my-0 font-weight-thin text-right">Contact</p>
                 <p class="subtitle-1 my-0 font-weight-thin text-right">+62-123-456-789-01</p>
             </v-col>
-            <button class="block" onClick="window.location.href='/restaurant/1/book'">
+            <button v-ripple class="block" onClick="window.location.href='/restaurant/1/book'">
                 <v-row>
                     <v-col cols="auto">
                         <v-img src="../assets/online-booking.png" height="50" width="50"></v-img>
@@ -22,7 +22,7 @@
                 </v-row>
             </button>
             <v-divider></v-divider>
-            <button class="block">
+            <button v-ripple class="block">
                 <v-row>
                     <v-col cols="auto">
                         <v-img src="../assets/menu.png" height="50" width="50"></v-img>
@@ -32,7 +32,7 @@
                     </v-col>
                 </v-row>
             </button>
-            <button class="block">
+            <button v-ripple class="block">
                 <v-row>
                     <v-col cols="auto">
                         <v-img src="../assets/playground.png" height="50" width="50"></v-img>
