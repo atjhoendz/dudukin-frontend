@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Katalog from '../views/Katalog.vue'
 import RestaurantPage from '../views/RestaurantPage.vue'
 import BookPage from '../views/BookPage.vue'
+import Invoice from '../views/Invoice.vue'
 
 Vue.use(VueRouter)
 
@@ -37,6 +38,11 @@ const routes = [
     path: '/restaurant/1/book',
     name: 'book',
     component: BookPage
+  },
+  {
+    path: '/order/12342069',
+    name: 'invoice',
+    component: Invoice
   },
   {
     path: '/about',
