@@ -31,7 +31,7 @@
         </v-card-text>
         <v-card-actions>
           <!-- <v-btn block depressed href="/dashboard" @click="btnLogin">Login</v-btn> -->
-          <v-btn block depressed @click="btnLogin">Login</v-btn>
+          <v-btn block depressed @click="btnLogin" href="/katalog">Log in</v-btn>
         </v-card-actions>
         <h4 class="text-center pt-2 pb-0 mb-1">Create an account</h4>
         <v-card-actions>

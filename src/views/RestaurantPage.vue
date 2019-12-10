@@ -11,7 +11,7 @@
                 <p class="title my-0 font-weight-thin text-right">Contact</p>
                 <p class="subtitle-1 my-0 font-weight-thin text-right">+62-123-456-789-01</p>
             </v-col>
-            <button class="block">
+            <button class="block" onClick="window.location.href='/restaurant/1/book'">
                 <v-row>
                     <v-col cols="auto">
                         <v-img src="../assets/online-booking.png" height="50" width="50"></v-img>
