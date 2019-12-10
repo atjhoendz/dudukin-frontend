@@ -22,3 +22,12 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### route
+```
+http://localhost:8080/
+http://localhost:8080/katalog
+http://localhost:8080/restaurant/1/
+http://localhost:8080/restaurant/1/book
+http://localhost:8080/order/12342069
+```
