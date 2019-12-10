@@ -11,9 +11,37 @@
                 <p class="title my-0 font-weight-thin text-right">Contact</p>
                 <p class="subtitle-1 my-0 font-weight-thin text-right">+62-123-456-789-01</p>
             </v-col>
-            <v-btn block text>Reserve a table</v-btn>
-            <v-btn block text>View menu</v-btn>
-            <v-btn block text>Available facilites</v-btn>
+            <button class="block">
+                <v-row>
+                    <v-col cols="auto">
+                        <v-img src="../assets/online-booking.png" height="50" width="50"></v-img>
+                    </v-col>
+                    <v-col>
+                        <p class="py-1 headline">Book a table</p>
+                    </v-col>
+                </v-row>
+            </button>
+            <v-divider></v-divider>
+            <button class="block">
+                <v-row>
+                    <v-col cols="auto">
+                        <v-img src="../assets/menu.png" height="50" width="50"></v-img>
+                    </v-col>
+                    <v-col>
+                        <p class="py-1 headline">View menu<menu></menu></p>
+                    </v-col>
+                </v-row>
+            </button>
+            <button class="block">
+                <v-row>
+                    <v-col cols="auto">
+                        <v-img src="../assets/playground.png" height="50" width="50"></v-img>
+                    </v-col>
+                    <v-col>
+                        <p class="py-1 headline">Available facilities<menu></menu></p>
+                    </v-col>
+                </v-row>
+            </button>
         </v-row>
     </div>
 </template>
