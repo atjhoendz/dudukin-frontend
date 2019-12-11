@@ -1,7 +1,11 @@
 import Api from '@/services/Api'
 
 export default {
-  login () {
-    return Api().post('/users/login')
+  login (param) {
+    return Api().post('/api/login', param)
+      .then (response)
+      .catch (error => {
+        return error
+      })
   }
 }
