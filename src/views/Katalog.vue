@@ -3,8 +3,8 @@
         <v-text-field label="Where would you like to eat?" prepend-inner-icon="mdi-magnify" solo outlined flat dense></v-text-field>
         <p class="font-weight-bold">Recommended Restaurants</p>
         <v-divider></v-divider>
-        <div class="scrolling-wrapper-flexbox">
-            <v-card v-for="card in cards" :key="card.title" width="175px" class="mx-2">
+        <div class="scrolling-wrapper-flexbox my-2 py-2">
+            <v-card v-for="card in cards" :key="card.title" width="175px" class="mx-2" href="/restaurant/1">
                 <v-img :src="card.src" height="100px"></v-img>
                 <v-card-text class="text--primary">
                     <div>{{ card.title }}</div>
@@ -14,8 +14,8 @@
         <p class="font-weight-bold">Choose the perfect environment</p>
         <v-divider></v-divider>
 
-        <div class="scrolling-wrapper-flexbox">
-            <v-card v-for="card in cards2" :key="card.title" width="175px" class="mx-2">
+        <div class="scrolling-wrapper-flexbox my-2 py-2">
+            <v-card v-for="card in cards2" :key="card.title" width="175px" class="mx-2" href="/restaurant/1">
                 <v-img :src="card.src" height="100px"></v-img>
                 <v-card-text class="text--primary">
                     <div>{{ card.title }}</div>
